@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineSafe-connect</title>
+
+    <!---links-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+
+<body>
+    <!--Header section-->
+    <header class="header-section">
+        <div class="section-content">
+            <div class="logo-container">
+                <h1 class="name">MS-connect</h1>
+            </div>
+
+            <ul class="navigationLinks" id="navLinks">
+                <li><a href="#home" class="navigation-link">Mponeng mine</a></li>
+                <li><a href="#media" class="navigation-link">Media</a></li>
+                <li><a href="#about" class="navigation-link">About Us</a></li>
+                <li><a href="#contact" class="navigation-link">Contact Us</a></li>
+            </ul>
+
+            <button>Login / Sign In</button>
+        </div>
+    </header>
+
+    <!--home section-->
+    <section class="home-section" id="home">
+        <div class="section-content">
+            <div class="left-side">
+                <div class="about-mine"></div>
+                <div class="mine-details">
+                    <div class="detail"></div>
+                    <div class="detail"></div>
+                    <div class="detail"></div>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="summary">
+                    <div class="mine-location">Mine location(image)</div>
+                    <div class="mine-history">Mine history paragraph</div>
+                </div>
+                <div class="alerts"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Media section-->
+    <section class="media-section" id="media">
+        <div class="section-content">
+            <h2 class="section-title">Media</h2>
+            <div class="top-widget">Mining picture</div>
+            <div class="bottom-widgets">
+                <div class="bottom-left-widgets">
+                    <div class="pictures">Pictures</div>
+                </div>
+                <div class="bottom-right-widgets">
+                    <div class="widget">Stats</div>
+                    <div class="widget">Stats</div>
+                    <div class="widget">Stats</div>
+                    <div class="widget">Stats</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!---About section-->
+    <section class="about-section" id="about">
+        <div class="section-content">
+            <h2 class="section-title">About Us</h2>
+
+            <div class="profile-image-container">Profile image</div>
+
+            <div class="text-container">About Us</div>
+        </div>
+    </section>
+
+    <!---Contact section-->
+    <section class="contact-section" id="contact">
+        <h2 class="section-title">Let's Talk</h2>
+        <div class="section-content">`
+            <ul class="contact-platforms">
+                <li class="contact-platform">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>015 000 0000</p>
+                </li> 
+
+                <li class="contact-platform">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>msconnect@gmail.com</p>
+                </li>
+
+                <li class="contact-platform">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>South Africa, Eastern Cape, Grahamstown (Makhanda)</p>
+                </li>
+
+                <li class="contact-platform">
+                    <i class="fa-solid fa-globe"></i>
+                    <p>www.msconnect.com</p>
+                </li>
+
+                <li class="contact-platform">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>000 000 0000</p>
+                </li>
+
+                <li class="contact-platform">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <p>msconnect_official</p>
+                </li>
+            </ul>
+
+
+            <div class="form">
+                <form id="contactForm" class="contact-form" action="#" method="POST">
+                    <input type="text" name="name" placeholder="Your name" class="form-input" required>
+                    <input type="email" name="email" placeholder="Your email" class="form-input" required>
+                    <textarea name="message" placeholder="Your message" class="form-input" required></textarea>
+                
+                    <!-- Hidden fields for Formspree configuration -->
+                    <input type="hidden" name="_subject" value="New message from portfolio website">
+                    <input type="text" name="_gotcha" style="display:none">
+
+                    <button type="submit" class="submit-button" id="submitBtn">Submit</button>
+                    <!-- Success/Error message container -->
+
+                    <!-- needs a specific css.... -->
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Footer section-->
+    <footer class="footer-section">
+        <div class="section-content">
+            <div class="logo-column">
+                <h1 class="name">MS-connect</h1>
+
+                <div class="phone">
+                    <p>Tel: (+27)00 000 0000</p>
+                    <p>Fax: (+27)00 000 0000</p>
+                </div>
+
+                <div class="address">
+                    <p>South Africa, Eastern Cape</p>
+                    <p>Grahamstown (Makhanda)</p>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="FooterNav-container">
+                <ul class="FooterNav">
+                    <li><a href="#home" class="navigation-link">Home</a></li>
+                    <li><a href="#media" class="navigation-link">Media</a></li>
+                    <li><a href="#about" class="navigation-link">About Us</a></li>
+                    <li><a href="#contact" class="navigation-link">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="portals">
+                <div class="adminstrative-portal">
+                    <p>Apply to be an Administrator Now!</p>
+                    <button>Apply now!</button>
+                </div>
+                <div class="miner-portal">
+                    <p>Apply for an On-site position Today!</p>
+                    <button>Apply here</button>
+
+                </div>
+            </div>
+
+            <div class="socials">
+                <p>You can reach through the following social media plartforms:</p>
+     
+                <div class="social-plartforms">
+                    <a href="#" class="social-icon" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    
+                    <a href="#" class="social-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="social-icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Linking custom script -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
