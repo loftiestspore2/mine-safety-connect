@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MineSafe-connect</title>
+    <title>MineSafety-Connect</title>
 
     <!---links-->
     <link rel="stylesheet" href="style.css">
@@ -11,26 +11,51 @@
 
 </head>
 
-<body style="background-color: #ffffff ;">
+<body>
     <!--Header section-->
-    <header class="header-section"
-    style="background-color: #2e2b2a; color: white; padding: 15px;">
-        <div class="section-content">
-            <div class="logo-container">
-                <h1 class="name">Mponeng Gold Mine</h1>
-            </div>
+    <header class="header-section">
+
+        <section class="section-content">
+
+            <section class="logo-container">
+                <section class="logo-image">
+                    <img src="images/helmet.png" alt="logo image">
+                </section>
+                <section class="logo-ans-slogan">
+                    <h1 class="name">MineSafety Connect</h1>
+                    <p class="slogan">Your safety is in your hands.</p>
+                </section>
+                
+            </section>
 
             <ul class="navigationLinks" id="navLinks">
-                <li><a href="#home" class="navigation-link" style="color: white;">Mponeng Gold Mine</a></li>
-                <li><a href="#media" class="navigation-link" style="color: white;">Our Business</a></li>
-                <li><a href="#about" class="navigation-link" style="color: white;">About Us</a></li>
-                <li><a href="#contact" class="navigation-link" style="color: white;">Contact Us</a></li>
+                <li><a href="#home" class="navigation-link">Home</a></li>
+                <li><a href="#media" class="navigation-link">Media</a></li>
+                <li><a href="#about" class="navigation-link">About Us</a></li>
+                <li><a href="#contact" class="navigation-link">Contact Us</a></li>
             </ul>
 
-            <button style="background-color: #b86b28; color: white; border: none;">Login / Sign In</button>
-        </div>
+            <button onclick="document.getElementById('loginF').showModal()">Sign-In</button>
+            <button onclick="document.getElementById('signU').showModal()">Sign-Up</button>
+        </section>
     </header>
-        <!--sign up form-->
+    <!--sign up form-->
+    <dialog id="signU">
+        <form method="post" action="/login">
+            
+            <label>Email
+                <input type="email" required>
+            </label>
+
+            <label>Password
+                <input type="password" name="Password">
+            </label>
+
+            <button type ="submit">Sign up</button>
+            <button type="button" onclick="this.closest('dialog').close()">Cancel</button>
+
+        </form>
+    </dialog>
     <!--login form-->
     <dialog id="loginF">
         <form method="post" action="/login">
@@ -43,7 +68,7 @@
                 <input name="User Name">
             </label>
 
-            <label>Passwor
+            <label>Password
                 <input type="password" name="Password">
             </label>
 
@@ -52,62 +77,108 @@
 
         </form>
     </dialog>
-    
-    <!--home section-->
-    <section class="home-section" id="home" style="background-color: #6a3925; color: white;">
-        <div class="section-content">
-            <div class="left-side">
-                <div class="about-mine"></div>
-                <div class="mine-details">
-                    <div class="detail"></div>
-                    <div class="detail"></div>
-                    <div class="detail"></div>
-                </div>
-            </div>
 
-            <div class="right-side">
-                <div class="summary">
-                    <div class="mine-location">Mine location(image)</div>
-                    <div class="mine-history">Mine history paragraph</div>
-                </div>
-                <div class="alerts"></div>
-            </div>
-        </div>
+    <!--home section-->
+    <section class="home-section" id="home">
+        <section class="section-content">
+            <section class="left-side">
+                <section class="about-mine">
+                  <img src="images/safety-rep.jpg" alt="Mponeng Gold Mine at sunset" width="100%">
+                </section>
+                <section class="mine-details">
+                    <section class="detail"></section>
+                    <section class="detail"></section>
+                    <section class="detail"></section>
+                </section>
+            </section>
+
+            <section class="right-side">
+                <section class="summary">
+                    <section class="mine-location">Mine location(image)</section>
+                    <section class="mine-history">Mponeng, located near Carletonville, South Africa, is the world's deepest gold mine,
+                        Commissioned in 1986 by AngloGold Ashanti, the mine was formerly known as Western Deep Levels South Shaft. 
+                        Harmony Gold Mining Company Limited acquired it in 2020. Development: Surface sinking for the twin shaft system began in 1981. Production Start: Mining commenced in 1986, along with the commissioning of the gold plant. Naming: It was originally part of the Western Deep Levels complex before being renamed Mponeng in 1999. Ownership Transition: Harmony Gold acquired the mine from AngloGold Ashanti in October 2020 for $300 million. 
+                        Operations & Depth: The mine targets the Ventersdorp Contact Reef (VCR),
+                        It is renowned as one of the world's most significant deep-level mining operations, often relying on massive refrigeration systems to maintain bearable working conditions.
+                    </section>
+                </section>
+                <section class="alerts"></section>
+            </section>
+        </section>
     </section>
 
     <!--Media section-->
-    <section class="media-section" id="media" style="background-color: #ECE4B7; color: #2e2b2a;">
-        <div class="section-content">
+    <section class="media-section" id="media">
+        <section class="section-content">
             <h2 class="section-title">Media</h2>
-            <div class="top-widget"><img src="../mine-safety-connect/images/mponeng-sunset.jpg" width="1000 px"; height="270px"></div>
-            <div class="bottom-widgets">
-                <div class="bottom-left-widgets">
-                    <div class="pictures">Pictures</div>
-                </div>
-                <div class="bottom-right-widgets">
-                    <div class="widget">Stats</div>
-                    <div class="widget">Stats</div>
-                    <div class="widget">Stats</div>
-                    <div class="widget">Stats</div>
-                </div>
-            </div>
+            <section class="top-widget">
+                <video src="safety.mp4" type="video/mp4" width="100%" height="100%" controls>
 
-        </div>
+                </video>
+            </section>
+
+            <section class="bottom-widgets">
+                <section class="bottom-left-widgets">
+                    <img src="images/mponeng-sunset.jpg" alt="Mponeng Gold Mine at sunset" width="100%">
+                </section>
+                <section class="bottom-right-widgets">
+                    <section class="widget">
+                        Depth:<ul>
+                            <li>Operating depth exceeds 4,000 metres (4 km) below surface.</li><li>
+                            Active mining levels typically between 3,160 m and 3,740 m</li></ul>
+                    </section>
+                    <section class="widget"><ul>Development:
+                        <li>1981 Surface sinking for the twin shaft system began.</li>
+                        <li>1986 Mining operations officially commenced.</li>
+                        <li>Gold plant commissioned the same year (1986).</li>
+                        </ul>
+                    </section>
+                    
+                </section>
+            </section>
+        </section>
     </section>
 
-    <!---About section-->
+    <!---About-Us section-->
     <section class="about-section" id="about">
-        <div class="section-content">
+        <section class="section-content">
+            
             <h2 class="section-title">About Us</h2>
 
-            <div class="profile-image-container">Profile image</div>
+            <section class="our-organisation-slider">
 
-            <div class="text-container">About Us</div>
-        </div>
+                <section class="mj-profile-image-container">
+                    <img src="images/mj.jpg" alt="profile image">
+                    <p>MJ's brief description<br>MJ's set of skills</p>
+                </section>
+                
+                <section class="tebogo-profile-image-container">
+                    <img src="images/tebogo.jpg" alt="profile image">
+                    <p>Tebogo's brief description<br>Tebogo's set of skills</p>
+                </section>
+                
+                <section class="mutsila-profile-image-container">
+                    <img src="images/mutsila.jpg" alt="profile image">
+                    <p>Mutsila's brief description<br>Mutsila's set of skills</p>
+                </section>
+                
+                <section class="hazel-profile-image-container">
+                    <img src="mine-safety-connect/images/hazel.jpeg" alt="profile image">
+                    <p>Overseeing project milestones and
+                         backend integration to create a smooth experience for miners and health 
+                         and safety admins alike<br>Hazel's set of skills</p>
+                </section>
+                
+                <section class="brandon-profile-image-container">
+                    <img src="images/brandon.jpg" alt="profile image">
+                    <p>Brandon's brief description<br>Brandon's set of skills</p>
+                </section>
+            </section>
+        </section>
     </section>
 
     <!---Contact section-->
-    <section class="contact-section" id="contact" style="background-color: #b86b28; color: white; padding: 40px;">
+    <section class="contact-section" id="contact">
         <h2 class="section-title">Let's Talk</h2>
         <div class="section-content">`
             <ul class="contact-platforms">
@@ -165,48 +236,63 @@
     </section>
 
     <!--Footer section-->
-    <footer class="footer-section" style="background-color: #2e2b2a; color: white;">
-        <div class="section-content">
-            <div class="logo-column">
-                <h1 class="name">MS-connect</h1>
+    <footer class="footer-section">
 
-                <div class="phone">
-                    <p>Tel: (+27)00 000 0000</p>
-                    <p>Fax: (+27)00 000 0000</p>
-                </div>
+        <section class="section-content">
 
-                <div class="address">
-                    <p>South Africa, Eastern Cape</p>
-                    <p>Grahamstown (Makhanda)</p>
-                    <p></p>
-                </div>
-            </div>
+            <section class="logo-column">
+                <h1 class="name">MineSafety Connect</h1>
+                <p><small>&copy; 2026 MineSafety Connect. All Rights Reserved.</small></p>
+            </section>
 
-            <div class="FooterNav-container">
+            <section class="FooterNav-container">
                 <ul class="FooterNav">
-                    <li><a href="#home" class="navigation-link" style="color: white; text-decoration: none;">Home</a></li>
-                    <li><a href="#media" class="navigation-link" style="color: white; text-decoration: none;">Media</a></li>
-                    <li><a href="#about" class="navigation-link" style="color: white; text-decoration: none;">About Us</a></li>
-                    <li><a href="#contact" class="navigation-link" style="color: white; text-decoration: none;">Contact Us</a></li>
+                    <li><a href="#home" class="navigation-link">Home</a></li>
+                    <li><a href="#media" class="navigation-link">Media</a></li>
+                    <li><a href="#about" class="navigation-link">About Us</a></li>
+                    <li><a href="#contact" class="navigation-link">Contact Us</a></li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="portals">
-                <div class="adminstrative-portal">
-                    <p>Apply to be an Administrator Now!</p>
-                    <button style="background-color: #b86b28; color: white; border: none;">Apply now!</button>
-                </div>
-                <div class="miner-portal">
-                    <p>Apply for an On-site position Today!</p>
-                    <button style="background-color: #b86b28; color: white; border: none;">Apply here</button>
+            <section class="authors">
+                <h2>Authors</h2>
+                <ul class="authors-list">
+                    <li>Mankgane M.J.
+                        <li>(+27) 72 017 7482</li>
+                        <li>g24m4845@campus.ru.ac.za</li>
+                    </li>
+                    <li>Mutsila H.
+                        <li>(+27) 79 109 3251</li>
+                        <li>g23m7701@campus.ru.ac.za</li>
+                    </li>
+                    <li>Phosa T.M.L.
+                        <li>(+27) 62 272 9580</li>
+                        <li>g24p9535@campus.ru.ac.za</li>
+                    </li>
+                    <li>Chagaluka H.A.
+                        <li>(+27) 60 854 7737</li>
+                        <li>g22c7386@campus.ru.ac.za</li>
+                    </li>
+                    <li>Pretorius B.
+                        <li>(+27) 71 330 1754</li>
+                        <li>g23m3685@campus.ru.ac.za</li>
+                    </li>
+                </ul>
+            </section>
 
-                </div>
-            </div>
-
-            <div class="socials">
-                <p>You can reach through the following social media plartforms:</p>
-     
-                <div class="social-plartforms">
+            <section class="socials">
+                <h4>Contact MineSafety Connect on:</h4>
+                <section class="phone">
+                    <p>Tel: (+27) 00 000 0000</p>
+                    <p>Fax: (+27) 00 000 0000</p>
+                </section>
+                <section class="address">
+                    <p>Hamilton Building, Rhodes University</p>
+                    <p>Grahamstown (Makhanda)</p>
+                    <p>South Africa, Eastern Cape<br></p>
+                </section>
+                <h4>You can reach through the following social media plartforms:</h4>
+                <section class="social-plartforms">
                     <a href="#" class="social-icon" target="_blank">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
@@ -219,12 +305,12 @@
                     </a>
 
                     <a href="#" class="social-icon">
-                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-tiktok"></i>
                     </a>
-                </div>
-            </div>
+                </section>
+            </section>
 
-        </div>
+        </section>
     </footer>
 
     <!-- Linking custom script -->
