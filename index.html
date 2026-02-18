@@ -6,7 +6,7 @@
     <title>MineSafety-Connect</title>
 
     <!---links-->
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
 </head>
@@ -36,27 +36,11 @@
             </ul>
 
             <button onclick="document.getElementById('loginF').showModal()">Sign-In</button>
-            <button onclick="document.getElementById('signU').showModal()">Sign-Up</button>
+            
         </section>
     </header>
-    <!--sign up form-->
-    <dialog id="signU">
-        <form method="post" action="/login">
-            
-            <label>Email
-                <input type="email" required>
-            </label>
-
-            <label>Password
-                <input type="password" name="Password">
-            </label>
-
-            <button type ="submit">Sign up</button>
-            <button type="button" onclick="this.closest('dialog').close()">Cancel</button>
-
-        </form>
-    </dialog>
-    <!--login form-->
+    
+    <!--sign-in form-->
     <dialog id="loginF">
         <form method="post" action="/login">
             
@@ -68,7 +52,7 @@
                 <input name="User Name">
             </label>
 
-            <label>Password
+            <label>Passwor
                 <input type="password" name="Password">
             </label>
 
@@ -94,15 +78,10 @@
 
             <section class="right-side">
                 <section class="summary">
-                    <section class="mine-location">Mine location(image)</section>
-                    <section class="mine-history">Mponeng, located near Carletonville, South Africa, is the world's deepest gold mine,
-                        Commissioned in 1986 by AngloGold Ashanti, the mine was formerly known as Western Deep Levels South Shaft. 
-                        Harmony Gold Mining Company Limited acquired it in 2020. Development: Surface sinking for the twin shaft system began in 1981. Production Start: Mining commenced in 1986, along with the commissioning of the gold plant. Naming: It was originally part of the Western Deep Levels complex before being renamed Mponeng in 1999. Ownership Transition: Harmony Gold acquired the mine from AngloGold Ashanti in October 2020 for $300 million. 
-                        Operations & Depth: The mine targets the Ventersdorp Contact Reef (VCR),
-                        It is renowned as one of the world's most significant deep-level mining operations, often relying on massive refrigeration systems to maintain bearable working conditions.
-                    </section>
+                    <section class="mine-location">located near Carletonville, South Africa</section>
+                    <section class="mine-history">Mine history paragraph</section>
                 </section>
-                <section class="alerts"></section>
+                <section class="alerts"><img src="images/mine-on-site.jpg" alt="on-site-workers" width="100%"></section>
             </section>
         </section>
     </section>
@@ -112,9 +91,7 @@
         <section class="section-content">
             <h2 class="section-title">Media</h2>
             <section class="top-widget">
-                <video src="safety.mp4" type="video/mp4" width="100%" height="100%" controls>
-
-                </video>
+                <video src="safety.mp4" type="video/mp4" width="100%" height="100%" controls></video>
             </section>
 
             <section class="bottom-widgets">
@@ -122,18 +99,49 @@
                     <img src="images/mponeng-sunset.jpg" alt="Mponeng Gold Mine at sunset" width="100%">
                 </section>
                 <section class="bottom-right-widgets">
-                    <section class="widget">
-                        Depth:<ul>
-                            <li>Operating depth exceeds 4,000 metres (4 km) below surface.</li><li>
-                            Active mining levels typically between 3,160 m and 3,740 m</li></ul>
+                    <section class="mine-history"><strong>Mponeng</strong><br>is the world's deepest gold mine,
+                        Commissioned in 1986 by AngloGold Ashanti, the mine was formerly known as Western Deep Levels South Shaft. 
+                        Harmony Gold Mining Company Limited acquired it in 2020. Development: Surface sinking for the twin shaft system began in 1981. 
+                        Production Start: Mining commenced in 1986, along with the commissioning of the gold plant. Naming: It was originally part of the Western Deep Levels complex before being renamed Mponeng in 1999. 
+                        Ownership Transition: Harmony Gold acquired the mine from AngloGold Ashanti in October 2020 for R4.8 billion. 
+                        Operations & Depth: The mine targets the Ventersdorp Contact Reef (VCR),
+                        It is renowned as one of the world's most significant deep-level mining operations, often relying on massive refrigeration systems to maintain bearable working conditions.
                     </section>
-                    <section class="widget"><ul>Development:
-                        <li>1981 Surface sinking for the twin shaft system began.</li>
-                        <li>1986 Mining operations officially commenced.</li>
-                        <li>Gold plant commissioned the same year (1986).</li>
-                        </ul>
-                    </section>
-                    
+
+                <section class="widget">
+                    <h3>ESG statistics</h3>
+                    <table>
+                        <tr>
+                            <th>Lost-time injury frequency rate</th>
+                            <th>Workforce</th>
+                        </tr>
+                        <tr>
+                            <td>6.12<br>per million hours worked</td>
+                            <td>6087<br>4 753 permanent employees and 1 334 contractors</td>
+                        </tr>
+                        <tr>
+                            <th>WATER INTENSITY</th>
+                            <th>Energy intensity</th>
+                        </tr>
+                        <tr>
+                            <td>6.49Mℓ<br>per tonne treated</td>
+                            <td>1.10MWh<br>per tonne treated</td>
+                        </tr>
+                        <tr>
+                            <th>GHG intensity</th>
+                            <th>TOTAL COMMUNITY SPEND</th>
+                        </tr>
+                        <tr>
+                            <td>1.15t CO2e<br>per tonne treated</td>
+                            <td>R103m</td>
+                        </tr>
+
+                    </table>
+                </section>
+                    <!--
+                    <section class="widget">Stats</section>
+                    <section class="widget">Stats</section>
+                    Stats section-->
                 </section>
             </section>
         </section>
@@ -143,44 +151,70 @@
     <section class="about-section" id="about">
         <section class="section-content">
             
-            <h2 class="section-title">About Us</h2>
+            <h2 class="section-title">Our Organisation</h2>
 
             <section class="our-organisation-slider">
 
                 <section class="mj-profile-image-container">
-                    <img src="images/mj.jpg" alt="profile image">
-                    <p>MJ's brief description<br>MJ's set of skills</p>
+                    <img src="images/mj.jpeg" alt="profile image" style="border-radius: 50%;">
+                    <dl>
+                        <dt>Mankgane M.J.</dt>
+                        <dd><p>MJ's brief description<br>MJ's set of skills</p></dd>
+                    </dl>
                 </section>
                 
                 <section class="tebogo-profile-image-container">
-                    <img src="images/tebogo.jpg" alt="profile image">
-                    <p>Tebogo's brief description<br>Tebogo's set of skills</p>
+                    <img src="images/tebogo.jpg" alt="profile image" style="border-radius: 50%;">
+                    <dl>
+                        <dt>Phosa T.</dt>
+                        <dd><p>Supporting frontend and backend 
+                            components and coordinating version control to maintain 
+                            a stable and reliable system<br>Tebogo's set of skills</p></dd>
+                    </dl>
                 </section>
                 
                 <section class="mutsila-profile-image-container">
-                    <img src="images/mutsila.jpg" alt="profile image">
-                    <p>Mutsila's brief description<br>Mutsila's set of skills</p>
+                    <img src="images/mutsila.jpg" alt="profile image" style="border-radius: 50%;">
+                    <dl>
+                        <dt>Mutsila H.</dt>
+                        <dd><p>Mutsila's brief description<br>Mutsila's set of skills</p></dd>
+                    </dl>
                 </section>
                 
                 <section class="hazel-profile-image-container">
-                    <img src="mine-safety-connect/images/hazel.jpeg" alt="profile image">
-                    <p>Overseeing project milestones and
-                         backend integration to create a smooth experience for miners and health 
-                         and safety admins alike<br>Hazel's set of skills</p>
+                    <img src="images/hazel.jpeg" alt="profile image" style="border-radius: 50%;">
+                    <dl>
+                        <dt>Hazel M.</dt>
+                        <dd><p>"I have a pencahnt for overseeing project milestones and backend integration to create a smooth experience for miners and health and safety admins alike.<br>
+                                My set of skills are:
+                                <ol>
+                                    <li>Database Administration</li>
+                                    <li>Backend Development</li>
+                                    <li>Project Management</li>
+                                    <li>Human Resources</li>
+                                </ol>
+                                When I am not managing projects, I like to read, run and design databases."
+                            </p>
+                        </dd>
+                    </dl>
                 </section>
                 
                 <section class="brandon-profile-image-container">
-                    <img src="images/brandon.jpg" alt="profile image">
-                    <p>Brandon's brief description<br>Brandon's set of skills</p>
+                    <img src="images/brandon.jpg" alt="profile image" style="border-radius: 50%;">
+                    <dl>
+                        <dt>Brandon M.</dt>
+                        <dd><p>Brandon's brief description<br>Brandon's set of skills</p></dd>
+                    </dl>
                 </section>
             </section>
         </section>
     </section>
 
-    <!---Contact section-->
+    <!---Feedback/Comments section-->
     <section class="contact-section" id="contact">
         <h2 class="section-title">Let's Talk</h2>
-        <div class="section-content">`
+        <section class="section-content">`
+            <!-- Our organisation's contact information -->
             <ul class="contact-platforms">
                 <li class="contact-platform">
                     <i class="fa-solid fa-phone"></i>
@@ -213,8 +247,8 @@
                 </li>
             </ul>
 
-
-            <div class="form">
+            <!-- Feedback/Comments form -->
+            <section class="form">
                 <form id="contactForm" class="contact-form" action="#" method="POST">
                     <input type="text" name="name" placeholder="Your name" class="form-input" required>
                     <input type="email" name="email" placeholder="Your email" class="form-input" required>
@@ -230,21 +264,22 @@
                     <!-- needs a specific css.... -->
                     <div id="formMessage" class="form-message"></div>
                 </form>
-            </div>
+            </section>
 
-        </div>
+        </section>
     </section>
 
     <!--Footer section-->
     <footer class="footer-section">
 
         <section class="section-content">
-
+            <!-- Logo and copyright -->
             <section class="logo-column">
                 <h1 class="name">MineSafety Connect</h1>
                 <p><small>&copy; 2026 MineSafety Connect. All Rights Reserved.</small></p>
             </section>
 
+            <!-- Navigation bar -->
             <section class="FooterNav-container">
                 <ul class="FooterNav">
                     <li><a href="#home" class="navigation-link">Home</a></li>
@@ -254,62 +289,77 @@
                 </ul>
             </section>
 
+            <!-- Table of authors, their roles, phone number, and email. -->
             <section class="authors">
-                <h2>Authors</h2>
-                <ul class="authors-list">
-                    <li>Mankgane M.J.
-                        <li>(+27) 72 017 7482</li>
-                        <li>g24m4845@campus.ru.ac.za</li>
-                    </li>
-                    <li>Mutsila H.
-                        <li>(+27) 79 109 3251</li>
-                        <li>g23m7701@campus.ru.ac.za</li>
-                    </li>
-                    <li>Phosa T.M.L.
-                        <li>(+27) 62 272 9580</li>
-                        <li>g24p9535@campus.ru.ac.za</li>
-                    </li>
-                    <li>Chagaluka H.A.
-                        <li>(+27) 60 854 7737</li>
-                        <li>g22c7386@campus.ru.ac.za</li>
-                    </li>
-                    <li>Pretorius B.
-                        <li>(+27) 71 330 1754</li>
-                        <li>g23m3685@campus.ru.ac.za</li>
-                    </li>
-                </ul>
+                <table>
+                    <tr>
+                        <th>Author</th>
+                        <th>Role</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                    </tr>
+                    <tr>
+                        <td><small>Mankgane M.J. </small></td>
+                        <td><small>Software Developer</small></td>
+                        <td><small>(+27) 72 017 7482</small></td>
+                        <td><small>g24m4845@campus.ru.ac.za</small></td>
+                    </tr>
+                    <tr>
+                        <td><small>Mutsila H. </small></td>
+                        <td><small>Software Developer</small></td>
+                        <td><small>(+27) 79 109 3251</small></td>
+                        <td><small>g24m7701@campus.ru.ac.za</small></td>
+                    </tr>
+                    <tr>
+                        <td><small>Phosa T.M.L. </small></td>
+                        <td><small>Software Developer</small></td>
+                        <td><small>(+27) 62 272 9580</small></td>
+                        <td><small>g24p9535@campus.ru.ac.za</small></td>
+                    </tr>
+                    <tr>
+                        <td><small>Chagaluka H.A. </small></td>
+                        <td><small>Project Manager</small></td>
+                        <td><small>(+27) 60 854 7737</small></td>
+                        <td><small>g22c7386@campus.ru.ac.za</small></td>
+                    </tr>
+                    <tr>
+                        <td><small>Pretorius B. </small></td>
+                        <td><small>Business Analyst</small></td>
+                        <td><small>(+27) 71 330 1754</small></td>
+                        <td><small>g23m3685@campus.ru.ac.za</small></td>
+                    </tr>
+                </table>
             </section>
 
+            <!-- Our organisation's contact details, address and social media links -->
             <section class="socials">
-                <h4>Contact MineSafety Connect on:</h4>
+                <h4>Contact Us:</h4>
                 <section class="phone">
                     <p>Tel: (+27) 00 000 0000</p>
                     <p>Fax: (+27) 00 000 0000</p>
                 </section>
+                <h4>Find Us:</h4>
                 <section class="address">
                     <p>Hamilton Building, Rhodes University</p>
                     <p>Grahamstown (Makhanda)</p>
                     <p>South Africa, Eastern Cape<br></p>
                 </section>
-                <h4>You can reach through the following social media plartforms:</h4>
+                <h4>Follow Us:</h4>
                 <section class="social-plartforms">
-                    <a href="#" class="social-icon" target="_blank">
-                        <i class="fa-brands fa-whatsapp"></i>
+                    <a href="https://youtu.be/e5Tv4LwGnjE" class="social-icon" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
                     </a>
-                    <a href="#" class="social-icon">
+                    <a href="https://www.facebook.com/MponengGold/" class="social-icon">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    
-                    <a href="#" class="social-icon">
+                    <a href="https://www.instagram.com/explore/locations/683489034/mponeng-gold-mine/" class="social-icon">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-
-                    <a href="#" class="social-icon">
+                    <a href="https://www.tiktok.com/@luckyngomoney/video/7441604148673514807?is_from_webapp=1&sender_device=pc" class="social-icon">
                         <i class="fa-brands fa-tiktok"></i>
                     </a>
                 </section>
             </section>
-
         </section>
     </footer>
 
@@ -318,6 +368,3 @@
     
 </body>
 </html>
-
-
-Supporting frontend and backend components and coordinating version control to maintain a stable and reliable system.
